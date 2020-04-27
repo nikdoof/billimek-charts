@@ -83,6 +83,9 @@ spec:
             {{- range .Values.persistence.extraExistingClaimMounts }}
             - name: {{ .name }}
               mountPath: {{ .mountPath }}
+            {{- if .subPath }}
+              subPath: {{ .subPath }}
+            {{- end }}
               readOnly: {{ .readOnly }}
             {{- end }}
           resources:
