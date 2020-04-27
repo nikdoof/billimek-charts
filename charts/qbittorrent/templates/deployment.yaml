@@ -66,7 +66,7 @@ spec:
               value: "{{ .Values.pgid }}"
             - name: UMASK_SET
               value: "{{ .Values.umask }}"
-            {{ - if .Values.dockerMods }}
+            {{- if .Values.dockerMods }}
             - name: DOCKER_MODS
               value: "{{ .Values.dockerMods }}"
             {{- end }}
