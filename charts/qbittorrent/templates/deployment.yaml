@@ -66,6 +66,10 @@ spec:
               value: "{{ .Values.pgid }}"
             - name: UMASK_SET
               value: "{{ .Values.umask }}"
+            {{ - if .Values.dockerMods }}
+            - name: DOCKER_MODS
+              value: "{{ .Values.dockerMods }}"
+            {{- end }}
           volumeMounts:
             - mountPath: /config
               name: config

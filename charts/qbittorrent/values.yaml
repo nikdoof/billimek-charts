@@ -23,6 +23,7 @@ fullnameOverride: ""
 puid: 1001
 pgid: 1001
 umask: 022
+# dockerMods: ""
 
 image:
   repository: linuxserver/qbittorrent

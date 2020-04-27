@@ -27,6 +27,7 @@ fullnameOverride: ""
 timezone: UTC
 puid: 1001
 pgid: 1001
+# dockerMods: ""
 
 service:
   type: ClusterIP
